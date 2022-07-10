@@ -31,8 +31,8 @@ export class CollectImagePlugin {
   }
 
   apply(compiler: webpack.Compiler) {
-    // compiler.hooks.beforeRun.tapPromise('CollectImagePlugin', async () => {
-    compiler.hooks.environment.tap('CollectImagePlugin', () => {
+    compiler.hooks.beforeRun.tapPromise('CollectImagePlugin', async () => {
+    // compiler.hooks.environment.tap('CollectImagePlugin', () => {
 
       const fn = async () => {
         const files = await collect(this.searchRoots, this.extensions, this.ignore)
