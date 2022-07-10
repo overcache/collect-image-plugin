@@ -27,7 +27,7 @@ const nextConfig = withCollectImage({
     searchRoots: [path.resolve('./posts')],
     collectionFileDest: path.resolve('./posts/image_collection.js')
   },
-  reactStrictMode: true,
+  // other next config
 })
 
 export default nextConfig
