@@ -52,7 +52,7 @@ export default function Post({ mdxContent, currentMdFilePath }) {
 export const getStaticProps = async (context) => {
   // ...skip...
 
-  // must return currentMdFile path, which use to get image absolute path
+  // must return currentMdFile absolute path(such as /Users/tom/blog-project/posts/some-file.md), which use to get image absolute path
   return {
     props: {
       currentMdFilePath,
