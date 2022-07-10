@@ -1,0 +1,25 @@
+{
+  "name": "collect-image-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "files": "dist/**",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^28.1.4",
+    "@types/node": "^18.0.3",
+    "@types/webpack": "^5.28.0",
+    "chokidar": "^3.5.3",
+    "jest": "^28.1.2",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,15 @@
+{
+  "exclude": [".*.map$"],
+  "jsc": {
+    "target": "es2020",
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false
+    }
+  },
+  "module": {
+    "type": "commonjs"
+  },
+  "sourceMaps": false,
+  "inlineSourcesContent": false
+}
