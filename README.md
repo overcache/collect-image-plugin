@@ -1,7 +1,7 @@
 # collect-image-plugin
 
-A webpack Plugin collect all images files to a js/ts file. This plugin helps you
-use local images in next-mdx-remote
+A webpack Plugin collect all images files to a js/ts file. you use local images in MD/MDX file with this plugin. 
+It should be evey helpful when use with next-mdx-remote.
 
 
 ## Installation
