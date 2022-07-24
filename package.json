@@ -1,6 +1,6 @@
 {
   "name": "collect-image-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A webpack Plugin collect all images files to a js/ts file. you use local images in MD/MDX file with this plugin. ",
   "main": "dist/index.js",
   "scripts": {
