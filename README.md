@@ -1,6 +1,6 @@
 # collect-image-plugin
 
-A webpack Plugin collect all images files to a js/ts file. you use local images in MD/MDX file with this plugin. 
+A webpack Plugin collect all images files to a js/ts file. you can use local images in MD/MDX file with this plugin. 
 It should be evey helpful when use with next-mdx-remote.
 
 
@@ -27,7 +27,7 @@ const nextConfig = withCollectImage({
     searchRoots: [path.resolve('./posts')],
     collectionFileDest: path.resolve('./posts/image_collection.js')
   },
-  reactStrictMode: true,
+  // other next config
 })
 
 export default nextConfig
@@ -52,7 +52,7 @@ export default function Post({ mdxContent, currentMdFilePath }) {
 export const getStaticProps = async (context) => {
   // ...skip...
 
-  // must return currentMdFile path, which use to get image absolute path
+  // must return currentMdFile absolute path(such as /Users/tom/blog-project/posts/some-file.md), which use to get image absolute path
   return {
     props: {
       currentMdFilePath,
