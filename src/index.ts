@@ -32,12 +32,13 @@ export class CollectImagePlugin {
 
   apply(compiler: webpack.Compiler) {
     compiler.hooks.beforeRun.tapPromise('CollectImagePlugin', async () => {
-    // compiler.hooks.environment.tap('CollectImagePlugin', () => {
+      // compiler.hooks.environment.tap('CollectImagePlugin', () => {
 
       const fn = async () => {
         const files = await collect(this.searchRoots, this.extensions, this.ignore)
         const str = JSON.stringify(
           Array.from(files)
+            .sort((a, z) => a > z ? 1 : -1)
             .reduce((acc, file) => ({ ...acc, [this.createImageId(file)]: `__##REQUIRE##__${file}` }), {}),
           null,
           2,
